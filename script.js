@@ -1,3 +1,5 @@
+
+
 function getComputerChoice(min, max) {
     let number = Math.random() * (max - min) + min;
     number = Math.floor(number);
@@ -27,13 +29,13 @@ function playGame() {
     result = ((playerChoice - computerChoice) + 3) % 3
     console.log(result)
     if (result === 0) {
-        console.log("You tied!")
+        window.alert("You tied!");
         tied++;
     } else if (result === 1) {
-        console.log("You won!")
+        window.alert("You won!");
         wins++;
     } else {
-        console.log("You lost!")
+        window.alert("You lost!");
         loss++;
     }
 }
@@ -47,7 +49,8 @@ function playGame() {
 let wins = 0
 let loss = 0
 let tied = 0
-
+let playerChoice;
+let computerChoice;
 
 playGame(playerChoice, computerChoice)
 playGame(playerChoice, computerChoice)
