@@ -59,7 +59,7 @@ function playGame(playerChoice) {
 
     if ((wins === 5) || (loss === 5)) {
         if (wins === 5) {
-            alert("YOU HAVE WON!")
+            announcement.textContent = "You lost the game."
             wins = 0
             tied = 0
             loss = 0
@@ -68,7 +68,7 @@ function playGame(playerChoice) {
             totalTies.textContent = `Ties: ${tied}`;
         }
         else {
-            alert("The computer has beaten you...")
+            announcement.textContent = "You won the game!"
             wins = 0
             tied = 0
             loss = 0
